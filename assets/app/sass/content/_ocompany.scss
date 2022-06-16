@@ -1,0 +1,47 @@
+.ocompany__content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .ocompany__wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .ocompany__logo{
+            flex: 0 0 40%;
+            width: 40%;
+        }
+        .ocompany__text{
+            flex: 0 0 45%;
+            width: 45%;
+            font-family: 'Open Sans',sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+    }
+    .ocompany__slogan{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: normal;
+        color: #C78C47;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .ocompany__content .ocompany__wrap{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .ocompany__content .ocompany__wrap .ocompany__logo{
+        flex: 0 0 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .ocompany__content .ocompany__wrap .ocompany__text{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,203 @@
+.registration__table {
+    .flex-table {
+        display: flex;
+        flex-flow: row wrap;
+        border: 1px solid #C78C47;
+        margin-bottom: 30px;
+        border-collapse: collapse;
+
+        .flex-row {
+            position: relative;
+            box-sizing: border-box;
+            border-right: 1px solid #C78C47;
+            flex-grow: 1;
+            width: 50%;
+
+            &:last-of-type {
+                border-right: none;
+            }
+
+            .flex-row__thead {
+                border-bottom: 1px solid #C78C47;
+                padding: 10px 10px 10px 10px;
+            }
+
+            .box__serv-title {
+                color: #442454;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 24px;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+
+            }
+
+            .box__serv-description {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                line-height: 22px;
+                color: #000;
+                margin-bottom: 20px;
+
+            }
+
+            .box__serv-items {
+                padding-left: 0px;
+                margin-left: 0px;
+
+                .flex-row_td {
+                    border-bottom: 1px solid #C78C47;
+                }
+
+                .box__serv-item {
+                    padding: 10px 10px 10px 40px;
+                    color: #000;
+                    font-size: 14px;
+                    font-family: 'Open Sans', sans-serif;
+                    line-height: 25px;
+                    padding-bottom: 15px;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        left: 10px;
+                        top: 15px;
+                        background: url(../../../img/other_page/checklist-checked-box.svg);
+                    }
+                }
+
+            }
+
+            .box__serv-order {
+                &_description {
+                    color: #fff;
+                    font-size: 12px;
+                    font-family: 'Open Sans', sans-serif;
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+
+                &_terms {
+                    color: #fff;
+                    text-align: center;
+                    font-size: 36px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                &_mark {
+                    font-size: 12px;
+                    color: #C78C47;
+                    text-align: center;
+                }
+
+                .order__service {
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    width: 200px;
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 60px;
+                    border: 2px solid transparent;
+                    background: linear-gradient(180deg, #EEB26E 0%, #C78C47 100%);
+                    border-radius: 10px;
+                    color: #fff;
+                    text-transform: uppercase;
+
+                }
+
+
+            }
+
+        }
+
+        .item-1 {
+            flex: 2 1 50%;
+            min-width: 50%;
+        }
+
+        .item-2 {
+            flex: 2 1 50%;
+            min-width: 50%;
+        }
+
+        .item-3 {
+            flex: 2 1 100%;
+            min-width: 100%;
+        }
+
+        .background__order {
+            background: linear-gradient(180deg, rgba(25, 19, 38, 0.9) 0%, rgba(44, 27, 56, 0.9) 0.01%, rgba(68, 37, 78, 0.9) 95.83%);
+        }
+
+
+
+    }
+
+    .box__serv-mark {
+        color: #C78C47;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .box__serv-service {
+        color: #442454;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+.change__serv {
+    .flex-table {
+        margin-bottom: 0px;
+    }
+}
+
+.closed__serv .flex-table {
+    margin-bottom: 0px;
+}
+
+.closed__serv .flex-table.item-1 {
+    border-bottom: 1px solid transparent;
+}
+
+.closed__serv .flex-table .flex-row {
+    width: 60%;
+}
+
+.closed_legal.box__serv-order_terms span {
+    font-size: 16px;
+    display: block;
+}
+
+.closed_legal .box__serv-mark {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.change_legal .flex-table .flex-row .box__serv-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.change_legal .flex-table .flex-row .box__serv-items .box__serv-item {
+    display: flex;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.change_legal .flex-row.background__order.item-3 {
+    flex: 0 0 230px;
+    width: 230px;
+}
+
+
+

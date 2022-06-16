@@ -1,0 +1,245 @@
+.consulting {
+    margin-bottom: 50px;
+
+    .title-head {
+        padding-top: 20px;
+        margin-bottom: 50px;
+
+        .title-main {
+            position: relative;
+            font-weight: medium;
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 80px;
+                top: 8px;
+                left: -30px;
+                height: 1px;
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                width: 80px;
+                height: 1px;
+                top: 8px;
+                right: -30px;
+            }
+
+        }
+    }
+
+
+    .forms {
+        label {
+            display: block;
+            margin-bottom: 30px;
+            margin-left: 40px;
+
+            .title__input {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 22px;
+                color: #442454;
+                padding-bottom: 15px;
+
+                .gold {
+                    color: #C78C47;
+                }
+
+
+            }
+
+        }
+
+        .message {
+            height: 166px;
+            width: 440px;
+        }
+    }
+
+    .forms input {
+        display: block;
+        width: 400px;
+        background: #FFFFFF;
+        border: 2px solid #442454;
+        box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+        text-indent: 10px;
+        padding: 10px 0;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        color: #CE934F;
+        font-size: 1.25em;
+    }
+
+    .forms input:focus {
+        background: #FFFFFF;
+        border: 2px solid #C78C47;
+        box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn__get {
+        display: block;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        background: linear-gradient(180deg, #EEB26E 0%, #C78C47 100%);
+        border-radius: 10px;
+        height: 60px;
+        width: 300px;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        text-transform: uppercase;
+
+        &:hover {
+            background: linear-gradient(180deg, rgba(238, 178, 110, 0.8) 0%, rgba(199, 140, 71, 0.8) 100%);
+            border: 2px solid #C78C47;
+            box-shadow: 0px 5px 5px rgba(232, 175, 105, 0.3);
+            border-radius: 5px;
+            transition: all .5s;
+            color: #fff;
+        }
+
+    }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+    .consulting .forms label{
+        margin-right: 20px;
+    }
+    .consulting .forms input {
+        width: 100%;
+
+    }
+    .consulting .forms .message{
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .consulting .grid {
+        display: flex;
+        flex-direction: column;
+
+        .grid--6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .consulting .forms input {
+        display: block;
+        border: 2px solid #442454;
+        text-indent: 10px;
+        padding: 10px 0;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        color: #ce934f;
+        font-size: 1.25em;
+        width: 100%;
+    }
+
+    .consulting .forms .message {
+        height: 166px;
+        width: 100%;
+    }
+
+    .consulting .forms label {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .consulting .btn__get {
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        width: 230px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .consulting .title-head {
+        width: 300px;
+    }
+
+    .consulting .title-head .title-main {
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        font-weight: bold;
+        color: #44254E;
+    }
+
+    .consulting .title-head .title-main:before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        top: 8px;
+        left: 0px;
+        height: 1px;
+    }
+
+    .consulting .title-head .title-main:after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 1px;
+        top: 8px;
+        right: 0px;
+    }
+
+    .title-head .title-description {
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        font-size: 14px;
+        color: #ce934f;
+        padding-bottom: 0px;
+        font-weight: bold;
+    }
+
+    .consulting .grid {
+        display: flex;
+        flex-direction: column;
+
+        .grid--6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .consulting .forms input {
+        display: block;
+        border: 2px solid #442454;
+        text-indent: 10px;
+        padding: 10px 0;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        color: #ce934f;
+        font-size: 1.25em;
+        width: 100%;
+    }
+
+    .consulting .forms .message {
+        height: 166px;
+        width: 100%;
+    }
+
+    .consulting .forms label {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .consulting .btn__get {
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        width: 230px;
+    }
+
+}

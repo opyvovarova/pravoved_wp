@@ -1,0 +1,172 @@
+.callback {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .callback__title{
+        margin-bottom: 30px;
+        color: rgb(68, 37, 78);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 30px;
+        position: relative;
+        text-transform: uppercase;
+        &::after{
+            content: "";
+            background: linear-gradient(180deg, #EEB26E 0%, #C78C47 100%);
+            width: 2px;
+            height: 50px;
+            left: -10px;
+            bottom: -10px;
+            position: absolute;
+        }
+    }
+    .callback__info-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .callback__info-img {
+        display: inline-block;
+        position: relative;
+        color: #c78c47;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #fff;
+        border: 2px solid #eeb26e;
+        margin-right: 15px;
+
+        &:active,
+        &:hover {
+            background: #eeb26e;
+            color: #fff;
+            border: 2px solid #c78c47;
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            -webkit-transform: scale(1.1) rotate(1turn);
+            -ms-transform: scale(1.1) rotate(1turn);
+            transform: scale(1.1) rotate(1turn);
+        }
+    }
+    .callback__info-description {
+        text-align: left;
+        font-size: 16px;
+        font-family: 'Open Sans',sans-serif;
+        text-transform: none;
+        color: #222;
+    }
+    .callback-form label {
+        display: block;
+        margin-bottom: 10px;
+        max-width: 100%;
+
+        .title__input {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 22px;
+            color: #442454;
+            padding-bottom: 15px;
+            text-align: left;
+            width: 100%;
+            display: block;
+
+            .gold {
+                color: #C78C47;
+            }
+
+
+        }
+
+        input {
+            display: block;
+            width: 90%;
+            background: #FFFFFF;
+            border: 2px solid #442454;
+            box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+            text-indent: 10px;
+            padding: 10px 0;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            color: #CE934F;
+            font-size: 1.25em;
+        }
+
+        input:focus {
+            background: #FFFFFF;
+            border: 2px solid #C78C47;
+            box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+        }
+
+    }
+
+    .callback-form--msg {
+        display: block;
+        width: 90%;
+        background: #FFFFFF;
+        border: 2px solid #442454;
+        box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+        text-indent: 10px;
+        padding: 10px 0;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        color: #CE934F;
+        font-size: 1.25em;
+    }
+
+    textarea:focus {
+        background: #FFFFFF;
+        border: 2px solid #C78C47;
+        box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+.callback-form--submit {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(180deg, #EEB26E 0%, #C78C47 100%);
+    border-radius: 10px;
+    border: none;
+    height: 60px;
+    width: 300px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 25px;
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(238, 178, 110, 0.8) 0%, rgba(199, 140, 71, 0.8) 100%);
+        border: 2px solid #C78C47;
+        box-shadow: 0px 5px 5px rgba(232, 175, 105, 0.3);
+        border-radius: 10px;
+        transition: all .5s;
+        color: #fff;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .callback .grid .grid--6{
+        flex: 0 0 100%;
+        max-width: 100%;
+
+    }
+    .callback__content{
+        margin-bottom: 40px;
+    }
+    .callback .callback__info-description{
+        font-size: 14px;
+        width: 80%;
+    }
+}

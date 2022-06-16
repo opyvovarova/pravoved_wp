@@ -1,0 +1,43 @@
+.dop__content{
+    margin-bottom: 30px;
+    .dop__content-description{
+        font-family: 'Ope Sans', sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+    .dop__content-item{
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 25px;
+        padding-left: 25px;
+        padding-bottom: 10px;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url(../../../img/other_page/checklist-checked-box.svg) no-repeat;
+            left: 0px;
+            top: 0px;
+
+        }
+      
+    }
+    .dop__content-mark{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        padding-bottom: 20px;
+        color: #C78C47;
+    }
+
+
+}
+.dop__legal{
+    margin-bottom: 50px;
+    .dop__content-description{
+        font-size: 24px;
+        color: rgba(68,37,78,.9);
+}
+}

@@ -1,0 +1,78 @@
+.banner{
+    margin-bottom: 30px;
+    
+    .banner__text{
+        margin-top: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 30px;
+        color: #000;
+        padding-bottom: 50px;
+    }
+    .banner__bg{
+        width: 100%;
+        background: linear-gradient(180deg, rgba(25, 19, 38, 0.9) 0%, rgba(44, 27, 56, 0.9) 0.01%, rgba(68, 37, 78, 0.9) 95.83%);
+        height: 255px;
+        text-align: center;
+        position: relative;
+        color: #C78C47;
+        font-size: 24px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &::before{
+            content: "";
+            position: absolute;
+            content: "";
+            width: 70px;
+            height: 70px;
+            left: 50px;
+            top: -40px;
+            background: url(../../../img/other_page/left-quote.svg);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            content: "";
+            width: 70px;
+            height: 70px;
+            right: 50px;
+            bottom: -40px;
+            background: url(../../../img/other_page/right-quote.svg);
+        }
+        .banner__quote-title{
+            font-size: 48px;   
+        }
+        .banner__quote-description{
+            color: #fff;
+            font-size: 24px;
+            line-height: 30px;
+        }
+     
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .banner .banner__bg{
+        font-size: 20px;
+    }
+    .banner .banner__bg .banner__quote-title{
+        font-size: 36px;
+    }
+    .banner .banner__bg .banner__quote-description{
+        font-size: 20px;
+    }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+    .banner .banner__bg{
+        font-size: 18px;
+    }
+    .banner .banner__bg .banner__quote-title{
+        font-size: 24px;
+    }
+    .banner .banner__bg .banner__quote-description{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,43 @@
+.registration-flp {
+    margin-top: 30px;
+
+    .registration-flp__text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000;
+        margin-bottom: 30px;
+
+    }
+    .registration-flp__list-items {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+    .registration-flp__list-item {
+        padding-left: 0px;
+        color: #000;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 25px;
+        padding-bottom: 20px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 5px;
+            left: -10px;
+            top: 10px;
+            background-color: #C78C47;
+        }
+        a{
+            color: #C78C47;
+            font-weight: bold;
+            transition: all .3s;
+            &:hover, &:active{
+                color: rgba(#C78C47, 0.6);
+                transition: all .3s;
+            }
+        }
+    }
+}
